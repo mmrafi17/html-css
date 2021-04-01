@@ -16,9 +16,8 @@ body{
 .nav-bar{
     background-color: #ebe5e5;
     color: #636060;
-    padding: 0 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100px;
 }
@@ -43,7 +42,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     display: flex;
-    padding-right: 70px;
 }
 
 .nav-bar .nav-bar-right li{
@@ -60,8 +58,39 @@ body{
 
 .heading .container{
     margin: 0 auto;
-    width: 1170px;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.heading .container:hover{
+    margin: -20px auto;
+    font-size: 14px;
+    width: 40vw;
+    transition: 1.2s;
+}
+  
+.heading > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.heading h1{
+    font-weight: 400;
+    font-size: 3.5em;
+}
+
+#projects .container{
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    padding-top: 25px;
     background-color: rgb(255, 255, 255);
     box-shadow:
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -70,36 +99,22 @@ body{
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-  
-.heading > *{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-  
-.heading h1{
-font-weight: 400;
-font-size: 3.5em;
-}
 
-#projects{
-text-align: center;
-padding: 30px 0;
-height: 70vh;
+#projects .container .header{
 }
 
 #project-grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-place-content: center;
-grid-gap: 5px;
-width: 50%;
-margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    grid-gap: 5px;
+    padding: 20px;
+    background-color: #fff;
 }
 
 #project-grid .project-tile{
-background: #000;
-color: #fff;
+    background: #000;
+    color: #fff;
 }
 
 #projects h1{
@@ -120,6 +135,7 @@ color: #000;
 #contact{
 background-color: #ebe5e5;
 text-align: center;
+margin-top: 120px;
 height: 200px;
 padding: 50px 0;
 }
